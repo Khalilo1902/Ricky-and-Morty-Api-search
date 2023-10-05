@@ -4,7 +4,7 @@ export const renderEpisodeDetails = (episode) => {
   <div class=" flex flex-col items-center">
   <h1 class=" text-3xl text-purple-400 mb-4">name:${episode.name}</h1>
   <div class=" mt-4 flex flex-col items-center justify-center">
-  <p>${person.air_date}</p>
+  <p>${episode.air_date}</p>
   <p> <span class=" text-purple-400">url:</span> ${episode.url}</p>
   <p> <span class=" text-purple-400">created :</span> ${episode.created}</p>
  

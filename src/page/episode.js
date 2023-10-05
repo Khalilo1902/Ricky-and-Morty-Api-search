@@ -1,4 +1,4 @@
-import fetchEpisodes from "../Tools/fetchEpisode"
+import fetchEpisodes from "../Tools/fetchEpisodes"
 
 
  const episode = (id) => {

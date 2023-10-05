@@ -1,3 +1,4 @@
+import EpisodePage from "../src/page/EpisodePage";
 import HomePage from "../src/page/HomePage";
 import details from "../src/page/details";
 import episode from "../src/page/episode";
@@ -9,15 +10,17 @@ const Router = () => {
   console.log(route);
   if (route[0] === "person") {
     if (route.length > 1) {
-      return Details(route[1]);
+      return details(route[1]);
     }
-    else if (route[0] === "episode") {
-      if (route.length > 1) {
-        return episode(route[1]);
-      }
+    
     }
-    return HomePage();
+    
+    if (route[0] === "episodes") {
+        if (route.length > 1) {
+          return episode(route[1]);
+        }
   }
+  return HomePage();
 };
 
 export default Router;
