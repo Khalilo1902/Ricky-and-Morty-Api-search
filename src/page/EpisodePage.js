@@ -1,5 +1,8 @@
 import fetchEpisodes from "../Tools/fetchEpisodes";
+import Header from "../components/Header";
 import EpisodeList from "../components/episodeListe";
+import inputSearch from "../components/inputSearch";
+import Pagination from "../components/pagination";
 
 
 const EpisodePage = ()=>{

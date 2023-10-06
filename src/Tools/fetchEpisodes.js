@@ -6,6 +6,8 @@ import { renderEpisode } from "../Render/renderEpisode";
     const data = await fetch(url)
     console.log(data)
     renderEpisode(results)
+    const [results,info]=data
+    console.log(results)
     renderPagination(info,name,page)
 }
 
