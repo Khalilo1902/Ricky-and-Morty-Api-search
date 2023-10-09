@@ -1,4 +1,3 @@
-import { fetchPersons } from "../Tools/fetchPersonne";
 import "../style.css"
 
 const PersonList = () => {

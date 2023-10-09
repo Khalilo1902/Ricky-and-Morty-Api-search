@@ -7,7 +7,7 @@ export const renderPagination = (info, name="", page="") => {
     const prevPage = info.prev ? currentPage - 1 : '';
 
 
-    let pageNUmbers=displayPageNUmbers(pageCount, currentPage, name);
+    const  pageNUmbers=displayPageNUmbers(pageCount, currentPage, name);
     
 
 
@@ -24,7 +24,7 @@ export const renderPagination = (info, name="", page="") => {
 const displayPageNUmbers = (pageCount, currentPage, name="") => {
     let pageNumbers = [];
     if(pageCount <= 5) {
-        return Array(5).fill().map((_, index) => PaginationButton(index+1, index+1, name)).join('');
+        return Array(pageCount).fill().map((_, index) => PaginationButton(index+1, index+1, name)).join('');
     }
 
     if(currentPage <3) {

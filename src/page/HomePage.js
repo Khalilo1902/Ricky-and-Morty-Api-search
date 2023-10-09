@@ -2,7 +2,7 @@ import Header from "../components/Header";
 import inputSearch from "../components/inputSearch";
 import Pagination from "../components/pagination";
 import PersonList from "../components/personneListe";
-import { fetchPersons } from "../Tools/fetchPersonne";
+import  {fetchPersons}  from "../Tools/fetchPersonne";
 
 const App = () => {
   const path = window.location.pathname.slice(1);
@@ -11,6 +11,7 @@ const App = () => {
   const name = searchParams.get("name") ?? "";
   const page = searchParams.get("page") ?? "";
   fetchPersons(name, page);
+ 
   return /*html */ `
         <div class=" container py-10">
         ${Header()}

@@ -1,17 +1,13 @@
-
 import Router from "../router/index";
-
+import Menu from "./components/Menu";
 
 const App = () => {
-    return /*html */`
+  return /*html */ `
         <div>
-            <div class="container py-2 flex">
-                <a href="/">Home</a>
-            </div>
-            
-            ${Router()}
+        ${Menu()}
+         ${Router()}
         </div>
     `;
-}
+};
 
 export default App;
