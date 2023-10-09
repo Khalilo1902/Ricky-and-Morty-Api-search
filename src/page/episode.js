@@ -1,11 +1,10 @@
-import fetchEpisodes from "../Tools/fetchEpisodes"
-
+import fetchEpisodeDetails from "../Tools/fetchEpisodeDetails";
 
  const episode = (id) => {
 
-    fetchEpisodes(id)
+    fetchEpisodeDetails(id)
 
-    console.log(fetchEpisodes(id))
+
 
     return /*html */`
     <div class=" container py-10" id="episodeContent"></div>

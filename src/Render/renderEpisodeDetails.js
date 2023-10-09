@@ -6,7 +6,7 @@ export const renderEpisodeDetails = (episode) => {
   <div class=" mt-4 flex flex-col items-center justify-center">
   <p>${episode.air_date}</p>
   <p> <span class=" text-purple-400">url:</span> ${episode.url}</p>
-  <p> <span class=" text-purple-400">created :</span> ${episode.created}</p>
+  <p> <span class=" text-purple-400">created :</span> ${episode.created ? new Date(episode.created).toLocaleString("en-US"): ""}</p>
  
 </div>
   </div>
