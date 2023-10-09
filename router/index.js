@@ -19,7 +19,7 @@ const Router = () => {
         if (route.length > 1) {
           return episode(route[1]);
         }
-        return EpisodePage
+        return EpisodePage ()
   }
   return HomePage();
 };
